@@ -1,0 +1,24 @@
+class sclase{
+    constructor(x,y,w,h,angle){
+        var simulador = {
+            'restitution':0.8,
+            "friction":1.0,
+            "density":1.0
+        }
+    this.body=pausa03.rectangle(x,y,w,h,simulador);
+    this.width= w;
+    this.height = h;
+this.image =loadImage("sprites/base.png")
+    
+    windos02.add(mundo05,this.body)
+    }
+    mas(){
+     var rotar = this.body.angle;
+     push()
+     translate(this.body.position.x,this.position.y)
+     rotate(rotar)
+     rectMode(CENTER)
+        rect(this.image,0,0,this.width,this.height)
+        pop()
+    }
+    }
